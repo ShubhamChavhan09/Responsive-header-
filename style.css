@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+header {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  background: #34ace0;
+}
+.logo {
+  /* position: relative; */
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #fff;
+}
+.navigation {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.navigation li {
+  list-style-type: none;
+  margin: 0 10px;
+}
+.navigation li a {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+.navigation li a:hover {
+  color: #636e72;
+}
+.search {
+  /* position: relative; */
+  padding-left: 5px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  outline: none;
+  color: #fff;
+  background: transparent;
+}
+.search input {
+  /* position: absolute; */
+  color: #fff;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 90%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 5px 0 5px;
+}
+header .search input::placeholder {
+  color: #fff;
+}
+.fa-search {
+  padding-right: 5px;
+  border-right: 2px solid #fff;
+}
+.banner {
+  background: #227093;
+  padding: 200px 100px 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner .content {
+  max-width: 700px;
+}
+.banner .content h2 {
+  font-size: 3em;
+  color: #fff;
+}
+.banner p {
+  color: #fff;
+  font-size: 1em;
+}
+.content a {
+  display: inline-block;
+  background: #fff;
+  color: #0984e3;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.image {
+  filter: invert(1);
+  max-width: 400px;
+  margin-left: 50px;
+}
+@media (max-width: 1050px) {
+  header {
+    padding: 10px 20px;
+    flex-direction: column;
+  }
+  .banner {
+    padding: 20px 20px;
+    flex-direction: column-reverse;
+  }
+  .image {
+    margin-left: 0;
+    max-width: 80%;
+  }
+  .banner .content h2 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 700px) {
+  .search {
+    width: 100%;
+  }
+  .image {
+    margin-top: 30px;
+  }
+}
